@@ -1,6 +1,8 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import <livekit-react-native-webrtc/WebRTCModuleOptions.h>
+#import <WebRTC/RTCLogging.h>
 
 @implementation AppDelegate
 
@@ -10,6 +12,9 @@
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
+
+  WebRTCModuleOptions *options = [WebRTCModuleOptions sharedInstance];
+  options.loggingSeverity = RTCLoggingSeverityInfo;
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }

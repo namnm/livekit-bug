@@ -7,11 +7,11 @@
     "ios": "react-native run-ios",
     "pret": "prettier --write .",
     "start": "react-native start",
-    "test": "jest"
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@livekit/react-native": "2.4.2",
-    "@livekit/react-native-webrtc": "125.0.4",
+    "@livekit/react-native-webrtc": "114.1.6",
     "livekit-client": "2.5.8",
     "react": "18.3.1",
     "react-native": "0.75.4"
@@ -25,6 +25,8 @@
     "@react-native/typescript-config": "0.75.4",
     "@types/jest": "29.5.13",
     "@types/react": "18.2.6",
+    "jetifier": "2.0.0",
+    "patch-package": "8.0.0",
     "prettier": "2.8.8",
     "typescript": "5.0.4"
   },
